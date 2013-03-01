@@ -12,7 +12,7 @@ module Remarkable
         elsif method_id.to_s =~ /^x(should_not|should)_(.+)/
           disabled_method_missing($1, $2, *args, &block)
         else
-          super(method_id, *args, &block)
+          #super(method_id, *args, &block)
         end
       end
 
